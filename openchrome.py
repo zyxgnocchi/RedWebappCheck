@@ -3,7 +3,7 @@ from selenium import webdriver
 
 # Main Page
 
-driver = webdriver.Chrome('/Users/yixzha01/Desktop/chromedriver') 
+driver = webdriver.Chrome('/builds/ws/RedWebappCheck/chromedriver') 
 driver.get('https://cat.deploymbed.com/main#/');
 driver.fullscreen_window()
 time.sleep(5)
@@ -20,7 +20,7 @@ driver.save_screenshot('floor.png')
 
 link = driver.find_element_by_xpath("//*[@id='settings']")
 print (link)
-link.click()
+#link.click()
 time.sleep(5)
 
 driver.quit()
